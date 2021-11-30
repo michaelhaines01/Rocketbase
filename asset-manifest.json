@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/rocketbase/static/css/main.7cbcd7f8.chunk.css",
-    "main.js": "/rocketbase/static/js/main.a195149f.chunk.js",
-    "main.js.map": "/rocketbase/static/js/main.a195149f.chunk.js.map",
+    "main.js": "/rocketbase/static/js/main.5ec3840a.chunk.js",
+    "main.js.map": "/rocketbase/static/js/main.5ec3840a.chunk.js.map",
     "runtime-main.js": "/rocketbase/static/js/runtime-main.3123c608.js",
     "runtime-main.js.map": "/rocketbase/static/js/runtime-main.3123c608.js.map",
     "static/css/2.70f7024f.chunk.css": "/rocketbase/static/css/2.70f7024f.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.70f7024f.chunk.css",
     "static/js/2.e9b97ec3.chunk.js",
     "static/css/main.7cbcd7f8.chunk.css",
-    "static/js/main.a195149f.chunk.js"
+    "static/js/main.5ec3840a.chunk.js"
   ]
 }
