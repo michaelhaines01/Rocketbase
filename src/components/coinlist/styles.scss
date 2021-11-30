@@ -1,4 +1,40 @@
-.coindata-container {
+@import "../../index.scss";
+
+.data-container {
   display: flex;
-  justify-content: space-evenly;
+  height: 90vh;
+  width: "100%";
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 999;
+
+  h1 {
+    @include mobile-l {
+      font-size: 15px;
+    }
+  }
+
+  .data-wrapper {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+  }
+  .top-svg-wrapper {
+    svg {
+      @include top-svg;
+      right: 68%;
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+  .bottom-svg-wrapper {
+    img {
+      @include bottom-svg-img;
+    }
+    svg {
+      @include bottom-svg;
+    }
+  }
 }

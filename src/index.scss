@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+
+html,
+body,
+#root,
+.App {
+  height: 100vh !important;
+  overflow: hidden !important;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  position: relative;
+}
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-l {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
+
+@mixin mobile-m {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin glass {
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.4px);
+  -webkit-backdrop-filter: blur(10.4px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+@mixin hover-glass {
+  background: rgba(109, 107, 107, 0.13);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.4px);
+  -webkit-backdrop-filter: blur(10.4px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+@mixin bottom-svg-img {
+  height: 20%;
+  position: absolute;
+  top: 78%;
+  right: 2%;
+  z-index: -1;
+}
+
+@mixin bottom-svg {
+  position: absolute;
+  height: 100%;
+  top: 55%;
+  left: 55%;
+  z-index: -2;
+  width: 100%;
+}
+
+@mixin top-svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 60%;
+  bottom: 40%;
+  z-index: -1;
+}

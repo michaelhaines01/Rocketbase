@@ -1,5 +1,44 @@
+@import "../../index.scss";
+
 .results-container {
-  height: 100%;
-  z-index: 4;
-  background-color: grey;
+  z-index: 100;
+  position: fixed;
+  top: 2.5%;
+  right: 4%;
+
+  .coindata-container {
+    @include glass;
+    left: 80%;
+    top: 4%;
+    margin-bottom: 5px;
+    @include tablet {
+      margin-bottom: 3px;
+    }
+    &:hover {
+      @include hover-glass;
+      left: 80%;
+      top: 4%;
+    }
+    .coindata-wrapper {
+      display: flex;
+      padding: 2%;
+      justify-content: space-between;
+      @include tablet {
+        font-size: 0.8rem;
+      }
+      h5 {
+        padding-left: 5%;
+      }
+      h6 {
+        padding-right: 5%;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
+/*.MuiFormLabel-root.Mui-focused {
+  color: black !important;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: black !important;
+}*/

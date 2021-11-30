@@ -1,0 +1,11 @@
+@import "../../index.scss";
+.date-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 10%;
+  font-size: 1rem;
+  @include tablet {
+    font-size: 0.7rem;
+  }
+}

@@ -1,18 +1,23 @@
-import "./App.css";
-import Header from "./components/header";
-import CoinList from "./components/coinlist/";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import CoinDetail from "./components/coindetail";
+import Navbar from "./components/Navbar";
+import CoinList from "./components/CoinList/";
+import CoinDetails from "./components/CoinDetails";
+import CoinTrending from "./components/CoinTrending";
+import Error from "./components/Error";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Routes>
-        <Route exact path="/" element={<CoinList />}></Route>
-        <Route exact path="/details/:id" element={<CoinDetail />}></Route>
-      </Routes>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<CoinList />}></Route>
+          <Route exact path="/details/:id" element={<CoinDetails />}></Route>
+          <Route exact path="/trending" element={<CoinTrending />}></Route>
+          <Route exact path="/error" element={<Error />}></Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

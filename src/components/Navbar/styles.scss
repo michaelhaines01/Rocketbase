@@ -1,0 +1,82 @@
+@import "../../index.scss";
+
+.nav-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: #0650a5;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  padding-left: 2%;
+
+  .nav-link-wrapper {
+    display: flex;
+    width: 65%;
+    align-items: center;
+    justify-content: space-between;
+    @include mobile-l {
+      width: 40%;
+    }
+    @include mobile-m {
+      width: 30%;
+    }
+    @include mobile-s {
+      width: 28%;
+    }
+
+    .link-wrapper {
+      display: flex;
+      text-decoration: none;
+    }
+
+    .logo-wrapper {
+      display: flex;
+      color: white;
+      width: 50%;
+
+      img {
+        width: 40px;
+        height: auto;
+        padding-right: 6%;
+      }
+      h1 {
+        font-size: 30px;
+
+        @include tablet {
+          font-size: 20px;
+        }
+        @include mobile-l {
+          display: none;
+        }
+      }
+    }
+
+    h1 {
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      font-size: 20px;
+      color: white;
+      transition: transform 200ms ease;
+      text-decoration: none;
+      &:hover {
+        transform: scale(1.05);
+      }
+      @include tablet {
+        font-size: 1em;
+      }
+      @include mobile-m {
+        display: none;
+      }
+    }
+    .flame-img {
+      display: none;
+      @include mobile-m {
+        width: 40px;
+        height: auto;
+        padding-right: 6%;
+        display: block;
+      }
+    }
+  }
+}
