@@ -10,7 +10,7 @@
   * Trending page displays top 10 current coins traded by volume.
   * Ability to click on any coin via search bar or either of the tables to then see a more detailed page about the coin.
   * Tests written to check rendering of main components.
-  * Responsive design across devices
+  * Responsive design across devices.
 
 ## Project notes
   * Search bar API only fetches 250 coins as the simple non paginated Coin Gecko API is currently down.
