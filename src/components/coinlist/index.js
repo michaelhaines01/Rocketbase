@@ -18,7 +18,7 @@ export default function CoinList() {
       headerName: "",
       flex: 0.5,
       renderCell: (params) => (
-        <img style={{ width: "100%" }} src={params.value} alt="coin" />
+        <img style={{ width: "80%" }} src={params.value} alt="coin" />
       ),
     },
     { minWidth: 100, field: "name", headerName: "Name", flex: 1 },
