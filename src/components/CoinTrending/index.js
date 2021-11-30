@@ -20,7 +20,9 @@ export default function CoinTrending() {
         setLoading(false);
       })
 
-      .catch((err) => setError(true));
+      .catch((err) => {
+        setError(true);
+      });
   }, []);
 
   const handleClick = (coin) => {

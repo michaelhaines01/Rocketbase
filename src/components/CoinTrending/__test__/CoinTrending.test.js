@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen, cleanup } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect";
 import CoinTrending from "..";
+import "@testing-library/jest-dom/extend-expect";
 
 afterEach(cleanup);
 
@@ -14,6 +14,6 @@ jest.mock("react-router-dom", () => ({
 
 test("Render coin trending component", () => {
   render(<CoinTrending />);
-  const coinDetailElement = screen.getByTestId("coin-trending");
+  let coinDetailElement = screen.getByTestId("coin-trending");
   expect(coinDetailElement).toBeInTheDocument();
 });

@@ -8,13 +8,11 @@
   justify-content: center;
   flex-direction: column;
   z-index: 999;
-
   h1 {
     @include mobile-l {
       font-size: 15px;
     }
   }
-
   .data-wrapper {
     height: 80%;
     width: 80%;
