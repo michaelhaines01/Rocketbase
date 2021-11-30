@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<CoinList />}></Route>
+          <Route exact path="/rocketbase" element={<CoinList />}></Route>
           <Route exact path="/details/:id" element={<CoinDetails />}></Route>
           <Route exact path="/trending" element={<CoinTrending />}></Route>
           <Route exact path="/error" element={<Error />}></Route>

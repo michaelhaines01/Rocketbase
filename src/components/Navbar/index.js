@@ -8,7 +8,7 @@ export default function Navbar() {
     <div className="nav-container">
       <div className="nav-link-wrapper">
         <div className="logo-wrapper">
-          <Link to="/" className="link-wrapper">
+          <Link to="/rocketbase" className="link-wrapper">
             <img src={`${process.env.PUBLIC_URL}/rocket.svg`} alt="rocket" />
             <h1>Rocketbase</h1>
           </Link>
